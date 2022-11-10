@@ -9,18 +9,18 @@ import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     # carrier signal components
-    carrier_amplitude = 2
+    carrier_amplitude = 5
     carrier_w0 = 4
 
     # time component
     time_component = 2
 
     # noise signal components
-    noise_amplitude = 0.005
+    noise_amplitude = 0.5
     noise_w0 = 200
 
     # creating a time series signal
-    t = np.linspace((-1) * time_component, time_component, 250*time_component, endpoint=False)
+    t = np.linspace((-1) * time_component, time_component, 275*time_component, endpoint=False)
 
     # our main input signal
     sig = 0.5 * (signal.square(2 * np.pi * 5 * t) + 1)
