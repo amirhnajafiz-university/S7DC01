@@ -15,6 +15,8 @@ if __name__ == "__main__":
     sig = 0.5 * (signal.square(2 * np.pi * 5 * t) + 1)
     car = a * np.cos(2 * np.pi * t * w)
 
+    tresh = 0.005 * np.sin(2 * np.pi * t * 50)
+
     plt.subplot(3, 1, 1)
 
     plt.title("input pulse")
@@ -30,7 +32,7 @@ if __name__ == "__main__":
     plt.subplot(3, 1, 3)
 
     plt.title("output signal")
-    plt.plot(t, np.multiply(sig, car))
+    plt.plot(t, np.multiply(sig, car) + tresh)
     plt.ylim(-1 + (-1) * a, a + 1)
 
     plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
