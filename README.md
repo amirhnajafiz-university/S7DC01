@@ -2,4 +2,10 @@
   Signal Modulation
 </h1>
 
-Modulating and Demodulating every periodic Signal.
+Modulating every periodic Signal. Data Communication first project.
+
+## Jupyter
+
+```shell
+jupyter notebook
+```
