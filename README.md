@@ -1,10 +1,14 @@
 <h1 align="center">
-  Signal Modulation
+  S7DC01
 </h1>
 
-Modulating every periodic Signal. Data Communication first project.
+<br />
+
+Modulating every periodic Signal using Python programming language. Data Communication first project.
 
 ## Jupyter
+
+See notebook:
 
 ```shell
 jupyter notebook
